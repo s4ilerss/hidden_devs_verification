@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- this ensures that the website is exactly matching the user's actual screen and allows some auto scaling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get In Touch</title>
+    <!-- linking the external css file here -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <!-- wrapper just centers the contact card on the page -->
+    <div class="wrapper">
+        <!-- splitting into two halves — image on the left, form on the right -->
+        <div class="contact">
+
+            <div class="contact-image">
+                <img src="image.png" alt="Contact" />
+            </div>
+
+            <div class="contact-form">
+                <h2>Get in touch</h2>
+                <p>Have a question or want to work together? Fill out the form and we'll get back to you shortly.</p>
+
+                <!-- each field is its own form-group so the label and input stack cleanly -->
+                <div class="form-group">
+                    <label for="name">Full name</label>
+                    <input type="text" id="name" placeholder="freddy johnson" />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" placeholder="fred876_2@example.com" />
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" placeholder="Tell us what's on your mind..."></textarea>
+                </div>
+
+                <a href="#" class="btn">Send message</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

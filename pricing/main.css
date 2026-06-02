@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=BBH+Bartle&family=Changa+One:ital@0;1&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Instrument+Serif:ital@0;1&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+/* font from google fonts */
+
+/* resetting browser defaults so nothing looks weird, i always start with this */
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Inter Tight", sans-serif;
+    background-color: #f5f7f0;
+}
+
+/* full page centering wrapper, min-height 100vh so it fills the screen even with little content */
+.profile-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 3px;
+}
+.header h1 {
+    color: #42443d;
+}
+.header p {
+    color: #66695f;
+}
+
+
+/* just keeping the monthly/annual labels and switch in a row */
+.toggle-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: inherit;
+
+}
+
+.label {
+  font-size: 16px;
+  color: #292928;
+}
+
+/* custom toggle — the actual input is hidden, all the visual stuff is handled by the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: #4d5044;
+  transition: 0.1s;
+  border-radius: 23px;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+.switch input:checked + .slider {
+  background-color: #1a1a16;
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(22px);
+}
+
+
+.profile-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid #e1e4db;
+    border-radius: 26px;
+}
+
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+}
+
+/* dark bg for the pro card so it visually pops as the featured/recommended plan */
+.special-card {
+    background-color: #191a19;
+}
+
+.special-card-header {
+    color: #e5e7e1;
+}
+
+.special-card-price {
+    color: #e5e7e1;
+}
+
+
+
+.special-features {
+    padding: 16px;
+}
+.special-features li {
+    color: #e5e7e1;
+    padding-bottom: 4px;
+}
+.special-features li::marker {
+    color: #dad9d763;
+}
+
+.special-btn{
+    padding: 10px;
+    background-color: #f1f1e9;
+    color: #21211e;
+    font-family: inherit;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.special-btn:hover{
+    background-color: #e2e2da;
+
+}
+.card-header h2{
+    color: #42443d;
+}
+.card-header p {
+    color: #66695f;
+}
+
+.card-price h1 {
+    color: #21221e;
+}
+
+.card-price span {
+    color: #66695f;
+}
+
+.features {
+    padding: 16px;
+}
+.features li {
+    color: #66695f;
+    padding-bottom: 4px;
+}
+.features li::marker {
+    color: #36363663;
+}
+
+.btn {
+    padding: 10px;
+    background-color: #21221e;
+    color: #f1f1e9;
+    font-family: inherit;
+    text-decoration: none;
+    border-radius: 8px;
+
+}
+
+.btn:hover {
+    background-color: #161615;
+
+}
+
+
+/* the little divider line on each side of the footer text — using ::before and ::after for that */
+.footer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.footer::before,
+.footer::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #d1d1cb3f;
+}

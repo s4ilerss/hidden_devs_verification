@@ -1,0 +1,142 @@
+/* i import the font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=BBH+Bartle&family=Changa+One:ital@0;1&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Instrument+Serif:ital@0;1&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* im resetting the global styles so there isnt an unnecessary margins or paddings */
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ensuring the page applies the "inter tight" font family and uses sans-serif if the browser doesnt support the first font & also setting the bg color to a creamy color*/
+body {
+    font-family: "Inter Tight", sans-serif;
+    background-color: #f5f7f0;
+}
+
+/* setting the wrapper to 100 vh which is almost the full screen basically */
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-end; 
+    /*flex-end allows me to put the actual wrapper at the bottom of the page which is where most footers are */
+}
+
+.footer {
+    width: 100%;
+    background-color: #f5f7f0;
+    border-top: 2px solid #e1e4db;
+    padding: 40px 48px 28px;
+}
+
+/* top row */
+.top-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #e1e4db;
+}
+
+/* brand col */
+.brand-info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.brand-logo-mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #191a19;
+}
+
+.brand-logo-mark svg {
+    width: 19px;
+    height: 19px;
+}
+
+.brand-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #191a19; 
+    /* styling the text "Expertise" */
+}
+
+.brand-info p {
+    font-size: 15px;
+    color: #66695f;
+    line-height: 1.6;
+    max-width: 260px;
+}
+
+/* link cols */
+.product {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product h2 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #42443d;
+    margin-bottom: 4px;
+}
+
+.product a {
+    font-size: 15px;
+    color: #66695f;
+    text-decoration: none;
+    transition: color 0.15s;
+    width: fit-content;
+}
+
+.product a:hover {
+    color: #191a19;
+}
+
+/* bottom bar */
+.bottom-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.bottom-footer p {
+    font-size: 14px;
+    color: #a8aba2;
+}
+
+.extra-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.extra-footer a {
+    font-size: 14px;
+    color: #a8aba2;
+    text-decoration: none;
+    transition: color 0.15s;
+}
+
+.extra-footer a:hover {
+    color: #66695f;
+}
+
+

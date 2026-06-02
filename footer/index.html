@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- this ensures that the website is extactly matching the user's actual screen and allows some auto scaling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+    <!-- linking the external css file here -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <!-- i set the wrapper over the entire page, just a habit so that i can put the footer at the bottom -->
+    <!-- u can see that i went for a similar style like the pricing section -->
+    <div class="wrapper">
+        <div class="footer">
+            <!-- i seperated the top footer which includes the actual footer and the bottom bottom footer which is just the copyright stuff and terms & legal stuff because it will be easier for me and i can just use simple flexbox on it -->
+            <div class="top-footer">
+                <div class="brand-info">
+                    <div class="brand-logo">
+                        <div class="brand-logo-mark">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkle-icon lucide-sparkle"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"/></svg>
+                        </div>
+                        <span class="brand-name">Expertise</span>
+                    </div>
+                    <p>A modern workspace for teams who care about how they work, not just what they ship.</p>
+                </div>
+
+                <!-- just naming each div the same so i can style it once and it applies to all -->
+                <div class="product">
+                    <h2>Product</h2>
+                    <a href="#">Features</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">What's new</a>
+                </div>
+
+                <div class="product">
+                    <h2>Company</h2>
+                    <a href="#">About</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact</a> 
+                    <!-- using anchor tags (<a>) cus it acts like a link which is better than button, same thing tho, i use just anchor tags -->
+                </div>
+
+                <div class="product">
+                    <h2>Resources</h2>
+                    <a href="#">Docs</a>
+                    <a href="#">Status</a>
+                    <a href="#">API</a>
+                    <a href="#">Support</a>
+                </div>
+            </div>
+
+            <div class="bottom-footer">
+                <p>© 2026 Expertise, Inc. All rights reserved.</p>
+                <div class="extra-footer">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- this ensures that the website is extactly matching the user's actual screen and allows some auto scaling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Cards</title>
+    <!-- linking the external css file here -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div class="profile-wrapper">
+        <div class="header">
+            <h1>Quality, at every level</h1>
+            <p>From solo projects to full-scale teams — there's a plan for where you're headed</p>
+        </div>
+
+        <!-- monthly/annual toggle — just visual for now, no js wired up yet -->
+        <div class="toggle-wrapper">
+            <span class="label">Monthly</span>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <span class="label">Annual</span>
+        </div>
+
+        <div class="profile-cards">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Free</h2>
+                    <p>Everything you need to get started and explore.</p>
+                </div>
+                <div class="card-price">
+                    <h1>$0</h1>
+                    <span>forever free</span>
+                </div>
+
+                <ul class="features">
+                    <li>Up to 3 projects</li>
+                    <li>5 GB storage</li>
+                    <li>Community support</li>
+                    <li>API access (limited)</li>
+                    <li>Basic analytics</li>
+                </ul>
+                <a href="#" class="btn">Get Started</a>
+            </div>
+
+            <!-- pro is the featured plan so it gets a special-card class to stand out with the dark bg -->
+            <div class="card special-card">
+                <div class="special-card-header">
+                    <h2>Pro</h2>
+                    <p>For professionals who need more power and flexibility.</p>
+                </div>
+                <div class="special-card-price">
+                    <h1>$30</h1>
+                    <span>per month</span>
+                </div>
+
+                <ul class="special-features">
+                    <li>Unlimited projects</li>
+                    <li>100 GB storage</li>
+                    <li>Advanced analytics</li>
+                    <li>Full API access</li>
+                    <li>Custom domains</li>
+                </ul>
+                <a href="#" class="special-btn">Get Started</a>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h2>Scale</h2>
+                    <p>For teams that need control, compliance, and scale.</p>
+                </div>
+                <div class="card-price">
+                    <h1>$149</h1>
+                    <span>per month</span>
+                </div>
+
+                <ul class="features">
+                    <li>Everything in pro</li>
+                    <li>1 TB storage</li>
+                    <li>Dedicated account manager</li>
+                    <li>API access (unlimited)</li>
+                    <li>Custom contracts</li>
+                </ul>
+
+                <a href="#" class="btn">Get Started</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
